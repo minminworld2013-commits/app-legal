@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Color:me (퍼스널컬러 진단) — 개인정보처리방침 / Privacy Policy</title>
-<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:24px auto;padding:0 16px;line-height:1.7;color:#222}h1{font-size:1.5rem}h2{font-size:1.15rem;margin-top:1.6em;border-bottom:1px solid #eee;padding-bottom:.3em}code{background:#f4f4f4;padding:1px 4px;border-radius:3px}small{color:#666}</style>
-<!-- Source of truth: apps/personal_color lib/features/settings/data/legal_texts.dart (code-accurate canon)
-     + business/ideas/personal-color/legal/. Derived bilingual publish target for the app-legal
-     GitHub Pages repo (personalcolor.html). Edit the source first, then re-derive — do not edit
-     this file as the primary copy. Structure/CSS mirrors kbazi.html precedent. -->
+<title>컬러핏 (Personal Color) — 개인정보처리방침 / Privacy Policy</title>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:24px auto;padding:0 16px;line-height:1.7;color:#222}h1{font-size:1.5rem}h2{font-size:1.15rem;margin-top:1.6em;border-bottom:1px solid #eee;padding-bottom:.3em}code{background:#f4f4f4;padding:1px 4px;border-radius:3px}small{color:#666}li{margin:.35em 0}</style>
 </head><body>
 <h1>개인정보처리방침 · Privacy Policy</h1>
-<p><small>앱: Color:me (퍼스널컬러 진단 / Personal Color) · 안드로이드 앱 / Android app · 시행일 / Effective: 2026-08-12 · 최종 갱신 / Last updated: 2026-08-17 · 문의 / Contact: minminworld2013@gmail.com</small></p>
-<p>이 문서는 앱에 실제로 들어있는 코드가 무엇을 수집·전송하는지를 기준으로 작성했습니다. 쓰지 않는 기능을 있는 것처럼 적지 않았고, 쓰는 기능을 없는 것처럼 적지 않았습니다. · This policy is written from what the shipped code actually collects and transmits — nothing more, nothing less.</p>
+<p><small>앱 / App: <b>컬러핏 (Personal Color)</b> · 패키지 / Package: <code>com.minminworld.personalcolor</code><br>
+운영자 / Operator: <b>MinMin World (개인 개발자 / individual developer)</b> · 문의 / Contact: <a href="mailto:minminworld2013@gmail.com">minminworld2013@gmail.com</a><br>
+시행일 및 최종 수정 / Effective and last updated: <b>2026-09-27</b></small></p>
 
-<h2>1. 사진은 기기 밖으로 나가지 않습니다 (Your Photo Never Leaves Your Device)</h2>
-<p><b>한국어:</b> 톤 진단을 위해 촬영하거나 갤러리에서 선택한 얼굴 사진은 <b>기기 안에서만</b> 분석됩니다. 앱은 사진에서 분석에 필요한 색상 값만 읽고 <b>원본 파일을 별도로 저장하지 않으며</b>, 사진이나 판정에 쓰인 픽셀이 서버로 전송되는 일은 없습니다. 개발자는 이용자의 사진을 볼 수 없고 수집·저장·공유하지 않습니다.</p>
-<p><b>English:</b> Face photos you take or pick for the tone diagnosis are analyzed <b>entirely on your device</b>. The app reads only the colour values needed for the analysis, <b>does not keep the original file</b>, and never transmits the photo or its pixels to any server. The developer cannot see, collect, store, or share your photos.</p>
+<p><b>한국어:</b> 이 방침은 현재 배포되는 컬러핏 모바일 앱이 정보를 처리하는 방식을 설명합니다. 앱은 로그인 없이 모든 진단과 가이드를 무료로 이용할 수 있습니다.</p>
+<p><b>English:</b> This policy explains how the currently distributed 컬러핏 mobile app handles information. All diagnoses and guides are free and can be used without signing in.</p>
 
-<h2>2. 기기 내부에만 저장되는 정보 (Stored On-Device Only)</h2>
-<p><b>한국어:</b> 톤 판정 결과(웜/쿨, 확신도, 판정 일시), 구매(잠금 해제) 상태, 앱 설정은 <b>기기 내부 저장소(로컬 DB)</b>에만 저장되며 외부로 전송되지 않습니다.</p>
-<p><b>English:</b> Your tone verdicts (warm/cool, confidence, timestamp), purchase/unlock state, and app settings are stored <b>only in local storage on your device</b> and are not transmitted anywhere.</p>
+<h2>1. 사진 처리 (Photo Processing)</h2>
+<p><b>한국어:</b> 카메라로 촬영하거나 갤러리에서 선택한 사진은 진단을 위해 기기 안에서 처리됩니다. 앱은 사진 바이트를 운영자 서버나 외부 AI 서비스로 보내지 않습니다. 사진 선택 과정에서 운영체제 또는 사진 선택기가 앱 전용 임시 복사본을 만들 수 있습니다. 앱은 읽기에 성공한 뒤 그 복사본을 삭제하고 다음 실행 때 남은 복사본도 최선의 범위에서 정리하지만, 앱 중단·읽기 실패·삭제 실패가 발생하면 임시 파일이 일정 기간 남을 수 있습니다. 갤러리의 원본 사진은 앱이 삭제하지 않습니다.</p>
+<p><b>English:</b> Photos taken with the camera or selected from the library are processed on-device for diagnosis. The app does not send photo bytes to an operator server or an external AI service. The operating system or photo picker may create an app-specific temporary copy. The app deletes that copy after a successful read and makes a best-effort cleanup of leftovers on a later launch, but a crash, read failure, or deletion failure can leave a temporary file for some time. The app does not delete the original photo in your library.</p>
 
-<h2>3. 서버로 전송되는 정보 (Information Sent to Our Server)</h2>
-<p><b>한국어:</b> 구매 기록을 기기 변경 후에도 되찾을 수 있도록, 다음 정보가 본 앱의 백엔드 서버(대한민국 소재, <code>api.minminworld.com</code>)로 전송됩니다 — (1) <b>익명 기기 식별값</b>(임의 생성된 비식별 ID, 실제 이메일 아님): 앱 최초 실행 시 자동 생성되어 로그인 없이도 구매 상태를 기기에 연결합니다. (2) <b>Google 계정의 이메일·표시 이름</b>: 이용자가 마이페이지에서 "계정 연결하기"를 직접 눌렀을 때만 전송됩니다. (3) <b>인증 토큰</b>(로그인 유지용). 전송 구간은 HTTPS(TLS)로 암호화됩니다. 서버는 사진이나 톤 판정 결과를 받지 않습니다.</p>
-<p><b>English:</b> So purchases can be restored on a new device, the following is sent to our backend server located in the Republic of Korea (<code>api.minminworld.com</code>) — (1) an <b>anonymous per-device identifier</b> (a random value, not a real email), created automatically on first launch; (2) your <b>Google account email and display name</b>, only when you tap "Link an account" yourself; (3) an <b>authentication token</b> to keep you signed in. Transfers are encrypted via HTTPS (TLS). The server receives neither photos nor tone verdicts.</p>
+<h2>2. 기기에 저장되는 진단 정보 (Diagnosis Data Stored on the Device)</h2>
+<p><b>한국어:</b> 진단 상태, 웜·쿨 판정, 계절·세부 유형, 내부 확률값, 품질 플래그, 판정 방법·규칙, 생성 시각이 기기 내 <b>SQLite</b> 데이터베이스에 저장될 수 있습니다. 사진 자체는 이 진단 기록에 저장되지 않습니다. 앱 설정과 온보딩 확인 상태 같은 환경설정도 기기에 저장될 수 있습니다. 이 정보는 앱이 운영하는 서버로 동기화되지 않습니다.</p>
+<p><b>English:</b> Diagnosis state, warm/cool result, season or detailed type, internal probability, quality flag, method/rule, and timestamp may be stored in an on-device <b>SQLite</b> database. The photo itself is not stored in the diagnosis record. Preferences such as app settings and onboarding state may also be stored on the device. This information is not synchronized to a server operated by the app.</p>
 
-<h2>4. 카메라·사진 권한 (Camera &amp; Photos Permission)</h2>
-<p><b>한국어:</b> 카메라·갤러리 권한은 톤 진단 기능에서만 사용됩니다. 갤러리 전체 스캔이나 백그라운드 접근에 쓰지 않습니다.</p>
-<p><b>English:</b> Camera and photo permissions are used only for the diagnosis feature — never for scanning your gallery or background access.</p>
+<h2>3. 선택적 로그인 (Optional Sign-In)</h2>
+<p><b>한국어:</b> 앱에는 Google 또는 Apple 로그인 경로가 남아 있을 수 있지만, 진단과 가이드 이용에 로그인은 필요하지 않습니다. 이용자가 로그인을 선택하면 해당 제공자가 계정 식별 정보와 표시 정보를 앱에 전달할 수 있습니다. 앱의 현재 세션은 자체 백엔드 계정이나 원격 데이터 저장소를 만들지 않습니다. 로그아웃은 앱 세션만 종료하며 Google·Apple 제공자 계정을 해지하거나 삭제하지 않습니다.</p>
+<p><b>English:</b> Google or Apple sign-in routes may remain available, but sign-in is not required for diagnoses or guides. If you choose to sign in, the provider may return account identifiers and display information to the app. The current app session does not create an operator-hosted backend account or remote data store. Signing out ends only the app session; it does not revoke or delete your Google or Apple provider account.</p>
 
-<h2>5. 인앱 결제 (In-App Purchase)</h2>
-<p><b>한국어:</b> 세부 톤 가이드는 유료(비소모성, 1회 구매)이며 Google Play 결제 시스템이 처리합니다. 카드번호 등 결제수단 정보는 Google이 처리하며 개발자는 접근할 수 없습니다. 환불은 Google Play 정책을 따릅니다. "구매 복원"은 마이페이지에서 이용할 수 있습니다.</p>
-<p><b>English:</b> The full guide is a one-time non-consumable purchase processed by Google Play. Payment details are handled by Google; the developer cannot access them. Refunds follow Google Play policy. "Restore purchase" is available in the Me tab.</p>
+<h2>4. 광고와 제3자 SDK (Advertising and Third-Party SDKs)</h2>
+<p><b>한국어:</b> 앱에는 <b>Google Mobile Ads</b> SDK가 포함되어 있습니다. 배포 빌드에서 광고가 활성화되고 올바른 광고 ID가 설정된 경우 Google은 광고 제공·측정·빈도 제한·부정행위 방지를 위해 IP 주소, 광고 식별자, 앱·기기 정보, 광고 상호작용 정보와 진단 정보를 처리할 수 있습니다. 해당 정보는 Google의 정책에 따라 처리되며 운영자의 서버에 진단 기록과 함께 저장되지 않습니다. 이 방침은 광고가 항상 비개인화된다고 주장하지 않습니다. 광고 개인 최적화와 광고 식별자 제어는 기기 설정 및 Google의 광고 설정에서 관리할 수 있습니다.</p>
+<p><b>English:</b> The app includes the <b>Google Mobile Ads</b> SDK. When ads are enabled and valid ad identifiers are configured in a release build, Google may process IP address, advertising identifiers, app/device information, ad interactions, and diagnostics to deliver, measure, frequency-cap, and protect ads against fraud. Google processes this data under its policies; it is not stored with diagnosis records on an operator server. This policy does not claim that ads are always non-personalized. Ad personalization and advertising-identifier controls are available through device settings and Google's ad settings.</p>
+<p><b>한국어:</b> 얼굴 특징 감지는 기기 내 <b>Google ML Kit</b> 구성요소를 사용할 수 있습니다. 사진 입력은 기기 내에서 처리되지만, SDK 제공자는 SDK 동작·진단과 관련된 정보를 자체 조건에 따라 처리할 수 있습니다. 앱 코드에는 별도로 연결된 분석 또는 충돌 수집 서비스가 확인되지 않습니다.</p>
+<p><b>English:</b> Face-feature detection may use on-device <b>Google ML Kit</b> components. Photo input is processed on-device, while the SDK provider may process SDK operation or diagnostic information under its own terms. No separately wired analytics or crash-reporting service is identified in the app code.</p>
+<p>Google 관련 정책 / Google policies: <a href="https://policies.google.com/privacy">Privacy Policy</a> · <a href="https://policies.google.com/technologies/ads">Advertising</a></p>
 
-<h2>6. 광고 및 분석 도구 (Advertising &amp; Analytics)</h2>
-<p><b>한국어:</b> 본 앱은 광고를 표시하지 않으며 광고 식별자를 수집하지 않습니다. 분석·추적 도구도 사용하지 않습니다. 이후 광고가 켜지는 경우 본 방침을 갱신하고 시행일을 새로 표시합니다.</p>
-<p><b>English:</b> This app displays no ads and collects no advertising identifier. No analytics or tracking tool is used. If ads are ever enabled, this policy will be updated with a new effective date.</p>
+<h2>5. 보관 및 삭제 (Retention and Deletion)</h2>
+<ul>
+<li><b>진단 기록:</b> 이용자가 앱 설정의 진단 기록 삭제를 실행하거나 앱 데이터를 지우거나 앱을 제거할 때까지 기기에 보관됩니다. · <b>Diagnosis records:</b> kept on-device until you delete diagnosis history in Settings, clear app data, or uninstall the app.</li>
+<li><b>환경설정:</b> 운영체제의 앱 데이터 삭제 또는 앱 제거로 지울 수 있습니다. 진단 기록 삭제 버튼만으로 모든 환경설정이 삭제되는 것은 아닙니다. · <b>Preferences:</b> removed by clearing app data or uninstalling; the diagnosis-history action alone does not remove every preference.</li>
+<li><b>사진 임시 복사본:</b> 1항의 방식으로 삭제와 잔여 정리를 시도합니다. · <b>Temporary photo copies:</b> deletion and residue cleanup are attempted as described in Section 1.</li>
+<li><b>문의 이메일:</b> 이용자가 자발적으로 보낸 이메일은 문의 처리와 법적 의무에 필요한 기간에만 사용·보관한 뒤 더 이상 필요하지 않으면 삭제합니다. · <b>Support email:</b> a message you voluntarily send is used and retained only as needed to handle the inquiry or meet a legal obligation, then deleted when no longer needed.</li>
+</ul>
+<p>자세한 절차 / Details: <a href="personalcolor-delete.html">데이터 삭제 안내 · Data Deletion Guide</a></p>
 
-<h2>7. 제3자 제공 (Third Parties)</h2>
-<p><b>한국어:</b> 개인정보를 판매하지 않습니다. 결제는 Google Play(Google LLC)가, 계정 연결 시 인증은 Google Sign-In이 처리하며, §3의 항목만 개발자가 운영하는 백엔드 서버로 전달됩니다. 그 외 제3자 제공은 법령에 근거하거나 이용자의 동의가 있는 경우로 한정됩니다.</p>
-<p><b>English:</b> We do not sell your personal information. Purchases are processed by Google Play (Google LLC); optional sign-in by Google Sign-In; only the items in §3 reach our own backend. No other third-party sharing occurs except as required by law or with your consent.</p>
+<h2>6. 아동 (Children)</h2>
+<p>본 앱은 만 14세 미만 아동을 대상으로 하지 않으며 해당 아동의 개인정보를 고의로 수집하지 않습니다. 현재 앱은 모든 화면에서 생년월일을 수집하거나 보편적인 연령 확인을 시행하지 않습니다. 보호자는 기기 수준의 보호·광고 설정을 이용해야 합니다. · The app is not directed to children under 14 and does not knowingly collect their personal information. The current app does not collect a date of birth or enforce a universal age check on every path. Guardians should use device-level protections and advertising settings.</p>
 
-<h2>8. 보관 및 삭제 (Retention &amp; Deletion)</h2>
-<p><b>한국어:</b> 사진은 애초에 저장되지 않습니다. 기기 내부 정보는 기기 설정 → 앱 → Color:me → 저장공간 → 데이터 삭제, 또는 앱 제거로 즉시 삭제됩니다. 연결한 계정은 <b>마이페이지 → 계정 삭제</b>로 직접 삭제를 요청할 수 있으며, 서버에 저장된 계정·인증 정보의 연결이 끊어집니다. 처리가 되지 않는 경우 아래 이메일로 문의해 주십시오. 자세한 절차: <a href="https://minminworld2013-commits.github.io/app-legal/personalcolor-delete.html">데이터 삭제 안내</a>.</p>
-<p><b>English:</b> Photos are never stored in the first place. On-device data can be deleted instantly via device Settings → Apps → Color:me → Storage → Clear data, or by uninstalling. A linked account can be deleted in-app via <b>Me → Delete account</b>, which severs the account and auth records on our server. If anything fails, contact us at the email below. Details: <a href="https://minminworld2013-commits.github.io/app-legal/personalcolor-delete.html">data deletion guide</a>.</p>
+<h2>7. 이용자의 권리와 문의 (Your Rights and Contact)</h2>
+<p>기기 안의 정보는 아래 삭제 안내에 따라 직접 삭제할 수 있습니다. Google·Apple 또는 Google 광고 서비스가 처리하는 정보에 대한 권리는 각 제공자의 절차를 이용해야 합니다. 문의: <a href="mailto:minminworld2013@gmail.com">minminworld2013@gmail.com</a>. · You can remove on-device information by following the deletion guide below. Requests concerning data processed by Google, Apple, or Google advertising services must use the relevant provider's process. Contact: <a href="mailto:minminworld2013@gmail.com">minminworld2013@gmail.com</a>.</p>
 
-<h2>9. 아동 (Children)</h2>
-<p>본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 만 14세 미만 아동의 정보를 고의로 수집하지 않습니다. 수집 사실이 확인되면 지체 없이 파기합니다. · This app is not directed to children under 14 and does not knowingly collect their information; any such data found will be deleted promptly.</p>
-
-<h2>10. 사업자 정보 (Business Information)</h2>
-<p>Color:me는 별도의 법인이나 사업자 등록 없이 개인 개발자가 운영합니다. · Color:me is operated by an individual developer, without a separate company or business registration.</p>
-
-<h2>11. 권리 및 문의 (Your Rights &amp; Contact)</h2>
-<p>이용자는 본인 정보의 열람·정정·삭제·처리정지를 요청할 수 있습니다. 개인정보 관련 문의: <a href="mailto:minminworld2013@gmail.com">minminworld2013@gmail.com</a> · You may request access, correction, deletion, or restriction of your information. Contact: <a href="mailto:minminworld2013@gmail.com">minminworld2013@gmail.com</a>.</p>
-
-<h2>12. 변경 (Changes)</h2>
-<p>본 방침은 변경될 수 있으며, 변경 시 본 페이지에 게시하고 시행일을 갱신합니다. 최종 갱신: 2026-08-17. · This policy may change; changes will be posted on this page with an updated effective date. Last updated: 2026-08-17.</p>
+<h2>8. 변경 및 관련 문서 (Changes and Related Documents)</h2>
+<p>앱 기능 또는 데이터 처리가 바뀌면 이 페이지의 내용과 날짜를 갱신합니다. · If app behavior or data processing changes, this page and its date will be updated.</p>
+<p><a href="personalcolor-terms.html">이용약관 · Terms</a> · <a href="personalcolor-delete.html">데이터 삭제 안내 · Data Deletion Guide</a></p>
 </body></html>

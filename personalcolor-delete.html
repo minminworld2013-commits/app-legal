@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Color:me — 계정·데이터 삭제 안내 / Account &amp; Data Deletion</title>
-<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:24px auto;padding:0 16px;line-height:1.7;color:#222}h1{font-size:1.5rem}h2{font-size:1.15rem;margin-top:1.6em;border-bottom:1px solid #eee;padding-bottom:.3em}small{color:#666}ol li{margin:.4em 0}</style>
+<title>컬러핏 (Personal Color) — 데이터 삭제 안내 / Data Deletion Guide</title>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:24px auto;padding:0 16px;line-height:1.7;color:#222}h1{font-size:1.5rem}h2{font-size:1.15rem;margin-top:1.6em;border-bottom:1px solid #eee;padding-bottom:.3em}code{background:#f4f4f4;padding:1px 4px;border-radius:3px}small{color:#666}li{margin:.4em 0}</style>
 </head><body>
-<h1>계정·데이터 삭제 안내 · Account &amp; Data Deletion</h1>
-<p><small>앱: Color:me (퍼스널컬러 진단, com.minminworld.personalcolor) · 문의 / Contact: minminworld2013@gmail.com</small></p>
+<h1>데이터 삭제 안내 · Data Deletion Guide</h1>
+<p><small>앱 / App: <b>컬러핏 (Personal Color)</b> · 패키지 / Package: <code>com.minminworld.personalcolor</code><br>
+운영자 / Operator: <b>MinMin World (개인 개발자 / individual developer)</b> · 문의 / Contact: <a href="mailto:minminworld2013@gmail.com">minminworld2013@gmail.com</a><br>
+최종 수정 / Last updated: <b>2026-09-27</b></small></p>
 
-<h2>1. 앱 안에서 직접 삭제 (In-App Self-Service)</h2>
-<p><b>한국어:</b> 계정을 연결한 경우, 앱에서 직접 삭제할 수 있습니다:</p>
-<ol><li>하단 탭 <b>마이</b> 열기</li><li><b>계정 삭제</b> 선택</li><li>확인 대화상자에서 한 번 더 <b>삭제</b> 선택</li></ol>
-<p>삭제 즉시 서버에 저장된 계정·인증 정보의 연결이 끊어지며, 되돌릴 수 없습니다.</p>
-<p><b>English:</b> If you linked an account, delete it in-app: open the <b>Me</b> tab → <b>Delete account</b> → confirm. This immediately severs the account and auth records on our server and cannot be undone.</p>
+<h2>1. 앱에서 진단 기록 삭제 (Delete Diagnosis Records in the App)</h2>
+<ol>
+<li>컬러핏의 설정 화면을 엽니다. · Open Settings in 컬러핏.</li>
+<li><b>진단 기록 삭제</b>를 선택합니다. · Select <b>Delete diagnosis history</b>.</li>
+<li>확인 창에서 삭제를 확정합니다. · Confirm deletion in the dialog.</li>
+</ol>
+<p>이 동작은 기기 내 SQLite 데이터베이스의 진단 기록을 삭제합니다. 온보딩 확인 상태나 다른 앱 환경설정, Google·Apple 제공자 정보, 운영체제 또는 SDK 제공자가 관리하는 정보까지 삭제하는 기능은 아닙니다. · This removes diagnosis rows from the on-device SQLite database. It does not remove onboarding state or every app preference, Google/Apple provider information, or data controlled by the operating system or an SDK provider.</p>
 
-<h2>2. 기기 데이터 삭제 (On-Device Data)</h2>
-<p>판정 결과·구매 상태·설정 등 기기 내부 데이터는 기기 설정 → 앱 → Color:me → 저장공간 → <b>데이터 삭제</b>, 또는 앱 제거로 즉시 삭제됩니다. 사진은 애초에 저장되지 않습니다. · On-device data (verdicts, unlock state, settings) is removed via device Settings → Apps → Color:me → Storage → <b>Clear data</b>, or by uninstalling. Photos are never stored.</p>
+<h2>2. 기기의 모든 앱 데이터 삭제 (Delete All Local App Data)</h2>
+<p><b>Android:</b> 기기 설정 → 앱 → 컬러핏(Personal Color) → 저장공간 → <b>앱 데이터 삭제</b>. 앱 제거로도 앱 컨테이너의 로컬 데이터가 삭제됩니다.</p>
+<p><b>iOS:</b> 설정 → 일반 → iPhone 저장 공간 → Personal Color → <b>앱 삭제</b>. “앱 정리하기”는 문서와 데이터를 남길 수 있으므로 전체 삭제가 필요하면 “앱 삭제”를 사용합니다.</p>
+<p><b>English:</b> On Android, use device Settings → Apps → Personal Color → Storage → <b>Clear app data</b>, or uninstall. On iOS, use Settings → General → iPhone Storage → Personal Color → <b>Delete App</b>; “Offload App” may retain documents and data.</p>
 
-<h2>3. 삭제되는 것 / 남는 것 (What Is Deleted / What Remains)</h2>
-<p><b>삭제:</b> 서버의 계정 연결(이메일·표시 이름·인증 토큰), 익명 기기 식별값과의 연결. <b>남음:</b> Google Play의 결제 영수증 기록(환불·회계 증빙 목적, Google 정책에 따름 — 개발자 서버가 아닌 Google 보관). · <b>Deleted:</b> the server-side account link (email, display name, auth tokens) and its tie to the anonymous device ID. <b>Retained:</b> Google Play purchase receipts (kept by Google for refund/accounting purposes under Google's policies, not on our server).</p>
+<h2>3. 로그인과 제공자 계정 (Sign-In and Provider Accounts)</h2>
+<p>현재 앱에는 운영자 서버 계정은 없습니다. 앱의 로그아웃은 현재 앱 세션을 종료할 뿐이며 Google·Apple 제공자 계정은 삭제되지 않습니다. 제공자 계정 또는 제공자가 보관한 정보는 Google 또는 Apple의 계정·개인정보 관리 화면에서 처리해야 합니다. · The current app has no operator-hosted server account. Signing out ends the current app session only; the Google or Apple provider account is not deleted. Manage the provider account and provider-held information through Google or Apple's account/privacy controls.</p>
 
-<h2>4. 이메일 요청 (Request by Email)</h2>
-<p>앱 접근이 불가능한 경우 <a href="mailto:minminworld2013@gmail.com">minminworld2013@gmail.com</a> 로 삭제를 요청하실 수 있습니다. 확인 후 지체 없이 처리합니다. · If you cannot access the app, email us and we will process the deletion promptly after verification.</p>
+<h2>4. 사진 임시 파일 (Temporary Photo Files)</h2>
+<p>사진 선택기가 앱 전용 임시 복사본을 만들 수 있습니다. 앱은 사진을 읽은 뒤 삭제하고 다음 실행 때 남은 복사본도 최선의 범위에서 정리합니다. 앱 중단·읽기 실패·삭제 실패로 남은 임시 복사본은 운영체제의 앱 데이터 삭제 또는 앱 제거로 지울 수 있습니다. 갤러리 원본은 앱 데이터 삭제 대상이 아닙니다. · The photo picker may create an app-specific temporary copy. The app deletes it after reading and makes a best-effort cleanup on a later launch. A copy left after a crash, read failure, or deletion failure can be removed by clearing app data or uninstalling. The original library photo is not part of app-data deletion.</p>
+
+<h2>5. 이메일 문의 (Email Support)</h2>
+<p>기기 안의 데이터는 운영자가 원격으로 볼 수 없으므로 이메일만으로 대신 삭제할 수 없습니다. 삭제 절차에 문제가 있으면 <a href="mailto:minminworld2013@gmail.com">minminworld2013@gmail.com</a>으로 문의할 수 있습니다. 자발적으로 보낸 문의 이메일은 문제 해결과 법적 의무에 필요한 기간에만 사용·보관한 뒤 더 이상 필요하지 않으면 삭제합니다. · The operator cannot see on-device data and therefore cannot remotely erase it by email. If the deletion steps fail, contact <a href="mailto:minminworld2013@gmail.com">minminworld2013@gmail.com</a>. A support email you voluntarily send is used and retained only as needed to resolve the issue or meet a legal obligation, then deleted when no longer needed.</p>
+
+<h2>6. 관련 문서 (Related Documents)</h2>
+<p><a href="personalcolor.html">개인정보처리방침 · Privacy Policy</a> · <a href="personalcolor-terms.html">이용약관 · Terms</a></p>
 </body></html>
