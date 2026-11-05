@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colorfit — データ削除ガイド</title><style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:760px;margin:24px auto;padding:0 16px;line-height:1.7;color:#222}h1{font-size:1.5rem}h2{font-size:1.15rem;margin-top:1.6em;border-bottom:1px solid #eee;padding-bottom:.3em}code{background:#f4f4f4;padding:1px 4px;border-radius:3px}small{color:#666}li{margin:.35em 0}</style>
+</head><body>
+<nav aria-label="言語"><a href="personalcolor-delete.html" lang="ko">한국어</a> / <a href="personalcolor-delete.html" lang="en">English</a> / <span aria-current="page">日本語</span></nav>
+<h1>データ削除ガイド</h1>
+<p><small>アプリ：<b>Colorfit（Personal Color）</b><br>
+パッケージ：<code>com.minminworld.colorfit</code>（現行Android版）、<code>com.minpox.personalColor</code>（現行iOS版）、<code>com.minminworld.personalcolor</code>（旧Android版）<br>
+運営者：<b>MINMINWORLD</b> · お問い合わせ：<a href="mailto:minminworld.com@gmail.com">minminworld.com@gmail.com</a><br>
+原文の最終更新日：2026年10月12日 · 日本語訳の公開日：2026年11月5日</small></p>
+<h2>1. アプリ内で診断履歴を削除する</h2>
+<ol><li>Colorfitの設定画面を開きます。</li><li><b>診断履歴を削除</b>を選びます。</li><li>確認ダイアログで削除を確定します。</li></ol>
+<p>この操作では、端末内のSQLiteデータベースにある診断記録を削除します。初回案内の確認状況やすべてのアプリ設定、Google・Apple側の情報、OSやSDK提供者が管理する情報まで削除する機能ではありません。</p>
+<h2>2. 端末内のアプリデータをすべて削除する</h2>
+<p><b>Android：</b>端末の「設定」→「アプリ」→「Personal Color（Colorfit）」→「ストレージ」から、アプリのデータを消去します。アプリをアンインストールしても、アプリ専用領域のローカルデータが削除されます。項目名は端末によって異なる場合があります。</p>
+<p><b>iOS：</b>「設定」→「一般」→「iPhoneストレージ」→「Personal Color」→「Appを削除」を選びます。「Appを取り除く」では書類やデータが残る場合があるため、すべて削除するには「Appを削除」を使用してください。</p>
+<h2>3. ログインと提供者のアカウント</h2>
+<p>現在のアプリには、運営者のサーバー上のアカウントはありません。アプリでログアウトしても、現在のアプリのセッションが終了するだけで、Google・Appleのアカウントは削除されません。提供者のアカウントや提供者が保管する情報は、GoogleまたはAppleのアカウント・プライバシー管理画面で管理してください。</p>
+<h2>4. 写真の一時ファイル</h2>
+<p>写真選択機能がアプリ専用の一時コピーを作成する場合があります。アプリは写真を読み込んだ後にコピーを削除し、次回起動時にも残ったコピーの削除を可能な範囲で試みます。アプリの中断、読み込みの失敗、削除の失敗によって残ったコピーは、OSのアプリデータ消去機能やアプリのアンインストールで削除できます。ライブラリ内の元の写真は、アプリデータの削除対象には含まれません。</p>
+<h2>5. メールでのお問い合わせ</h2>
+<p>運営者は端末内のデータを見ることができないため、メールによる依頼だけで遠隔から代わりに削除することはできません。削除手順で問題が発生した場合は、<a href="mailto:minminworld.com@gmail.com">minminworld.com@gmail.com</a>までお問い合わせください。任意で送信されたお問い合わせメールは、問題の解決や法的義務の履行に必要な期間に限り利用・保管し、不要になった時点で削除します。</p>
+<h2>6. 関連文書</h2>
+<p><a href="personalcolor-ja.html">プライバシーポリシー</a> · <a href="personalcolor-terms-ja.html">利用規約</a></p>
+</body></html>
